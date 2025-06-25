@@ -1,0 +1,250 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.imgcss {
+  border: 2px solid black;
+  width: 35rem;
+}
+
+.divtop {
+  width: 75%;
+  min-width: 75vw;
+  min-height: 100vh;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #fcaeae, #f8c3a1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.div1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightbar {
+  margin: 50px;
+
+}
+
+.heading {
+  background: linear-gradient(to left,
+      rgb(231, 106, 181), rgb(233, 103, 138), rgb(35, 147, 238), rgb(238, 38, 161), rgb(18, 140, 215), rgb(184, 17, 128), rgb(169, 24, 104));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  margin-left: 100px;
+  font-size: 3.5rem;
+}
+
+/* CSS */
+.btnGenerate {
+  background-color: #FFF3E2;
+  border-radius: 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px; */
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out, opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 53%;
+  margin-top: 42px;
+  margin-left: 200px;
+}
+
+.btnGenerate:hover {
+  background-color: #f5c507;
+}
+
+/* ----------- Result page ----------- */
+.result-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.result-window {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 42rem;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, -0.1);
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.result-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result-image {
+  max-width: 500px;
+  max-height: 368px;
+  margin: 0px 60px;
+}
+
+.result-caption {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.text-to-speech-btn {
+  background-color: #FFF3E2;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  /* Add your preferred border color */
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text-to-speech-btn:hover {
+  background: #f5c507;
+  background-image: -webkit-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -moz-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -ms-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -o-linear-gradient(top, #f5c507, #f5c507);
+  background-image: linear-gradient(to bottom, #f5c507, #f5c507);
+  text-decoration: none;
+}
+
+.translate-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.btm {
+  background-image: -webkit-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -moz-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -ms-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -o-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: linear-gradient(to bottom, #FFF3E2, #FFE5CA);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #7B2869;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+}
+
+.btm:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/* -------------- choose file -------------- */
+.result-logout {
+  background-image: -webkit-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -moz-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -ms-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -o-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: linear-gradient(to bottom, #FFF3E2, #FFE5CA);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #7B2869;
+  padding: 6px 18px;
+  cursor: pointer;
+}
+
+.result-logout:hover {
+  background: #f5c507;
+  background-image: -webkit-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -moz-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -ms-linear-gradient(top, #f5c507, #f5c507);
+  background-image: -o-linear-gradient(top, #f5c507, #f5c507);
+  background-image: linear-gradient(to bottom, #f5c507, #f5c507);
+  text-decoration: none;
+}
+
+/* -----------------------Extra button ----------------- */
+.extra-button {
+  display: flex;
+  flex-direction: row;
+}
